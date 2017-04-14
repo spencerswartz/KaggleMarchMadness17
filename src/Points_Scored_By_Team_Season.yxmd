@@ -1,0 +1,770 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.5">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="354" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RegularSeasonCompactResults.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Season" size="254" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="V_String" />
+            <Field name="Daynum" size="254" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="V_String" />
+            <Field name="Wteam" size="254" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="V_String" />
+            <Field name="Wscore" size="254" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="V_String" />
+            <Field name="Lteam" size="254" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="V_String" />
+            <Field name="Lscore" size="254" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="V_String" />
+            <Field name="Wloc" size="254" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="V_String" />
+            <Field name="Numot" size="254" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="774" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <SelectFields>
+            <SelectField field="Lscore" selected="True" rename="against" />
+            <SelectField field="Daynum" selected="False" />
+            <SelectField field="Wscore" selected="True" rename="for" />
+            <SelectField field="Lteam" selected="False" />
+            <SelectField field="Numot" selected="False" />
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="Season" selected="True" />
+            <SelectField field="Wteam" selected="True" rename="team" />
+            <SelectField field="Wloc" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="774" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <SelectFields>
+            <SelectField field="Wscore" selected="True" rename="against" />
+            <SelectField field="Daynum" selected="False" />
+            <SelectField field="Lscore" selected="True" rename="for" />
+            <SelectField field="Numot" selected="False" />
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="Season" selected="True" />
+            <SelectField field="Lteam" selected="True" rename="team" />
+            <SelectField field="Wloc" selected="False" />
+            <SelectField field="Wteam" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="654" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Season" selected="True" type="Int16" size="2" />
+            <SelectField field="Daynum" selected="True" type="Int16" size="2" />
+            <SelectField field="Wteam" selected="True" type="Int16" size="2" />
+            <SelectField field="Wscore" selected="True" type="Int16" size="2" />
+            <SelectField field="Lteam" selected="True" type="Int16" size="2" />
+            <SelectField field="Lscore" selected="True" type="Int16" size="2" />
+            <SelectField field="Wloc" selected="True" type="Int16" size="2" />
+            <SelectField field="Numot" selected="True" type="Int16" size="2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="462" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <StartValue>1</StartValue>
+          <FieldName>RecordID</FieldName>
+          <FieldType>Int32</FieldType>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="966" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Season" action="GroupBy" rename="Season" />
+            <SummarizeField field="RecordID" action="Count" rename="Count" />
+            <SummarizeField field="team" action="GroupBy" rename="team" />
+            <SummarizeField field="for" action="Sum" rename="Sum_for" />
+            <SummarizeField field="against" action="Sum" rename="Sum_against" />
+            <SummarizeField field="margin" action="Sum" rename="Sum_margin" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="966" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Season" action="GroupBy" rename="Season" />
+            <SummarizeField field="RecordID" action="Count" rename="Count" />
+            <SummarizeField field="team" action="GroupBy" rename="team" />
+            <SummarizeField field="for" action="Sum" rename="Sum_for" />
+            <SummarizeField field="against" action="Sum" rename="Sum_against" />
+            <SummarizeField field="margin" action="Sum" rename="Sum_margin" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1062" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="src" type="String" size="64" expression="'W'" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>src='W'</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1062" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="src" type="String" size="64" expression="'L'" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>src='L'</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1146" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1254" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Season" />
+            <Field field="team" />
+          </GroupFields>
+          <HeaderField field="src" />
+          <DataField field="Count" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>wins/losses</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Season" source="CrossTab:Group:Sum:" type="Int16" />
+            <Field name="team" source="CrossTab:Group:Sum:" type="Int16" />
+            <Field name="L" source="CrossTab:Header:src:L:Sum:" type="Int64" />
+            <Field name="W" source="CrossTab:Header:src:W:Sum:" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Season" order="Asc" />
+            <Field field="team" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="558" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Season" selected="True" />
+            <Field field="Daynum" selected="True" />
+            <Field field="Wteam" selected="True" />
+            <Field field="Wscore" selected="True" />
+            <Field field="Lteam" selected="True" />
+            <Field field="Lscore" selected="True" />
+            <Field field="Wloc" selected="True" />
+            <Field field="Numot" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Season" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="Int16" />
+            <Field name="Daynum" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="Byte" />
+            <Field name="Wteam" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="Int16" />
+            <Field name="Wscore" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="Byte" />
+            <Field name="Lteam" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="Int16" />
+            <Field name="Lscore" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="Byte" />
+            <Field name="Wloc" size="1" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="String" />
+            <Field name="Numot" source="File: C:\Users\edwardsd\OneDrive - ACT, Inc-\1 - Clients\kaggle-ncaa\2017\data\RegularSeasonCompactResults.csv" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1254" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Season" />
+            <Field field="team" />
+          </GroupFields>
+          <HeaderField field="src" />
+          <DataField field="Sum_for" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>points scored</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Season" source="CrossTab:Group:Sum:" type="Int16" />
+            <Field name="team" source="CrossTab:Group:Sum:" type="Int16" />
+            <Field name="L" source="CrossTab:Header:src:L:Sum:" type="Int64" />
+            <Field name="W" source="CrossTab:Header:src:W:Sum:" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Season" order="Asc" />
+            <Field field="team" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1254" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Season" />
+            <Field field="team" />
+          </GroupFields>
+          <HeaderField field="src" />
+          <DataField field="Sum_against" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>points allowed</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Season" source="CrossTab:Group:Sum:" type="Int16" />
+            <Field name="team" source="CrossTab:Group:Sum:" type="Int16" />
+            <Field name="L" source="CrossTab:Header:src:L:Sum:" type="Int64" />
+            <Field name="W" source="CrossTab:Header:src:W:Sum:" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Season" order="Asc" />
+            <Field field="team" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1350" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="L" selected="True" rename="Games_L" />
+            <SelectField field="W" selected="True" rename="Games_W" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1350" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="L" selected="True" rename="PointsScored_L" />
+            <SelectField field="W" selected="True" rename="PointsScored_W" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1350" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="L" selected="True" rename="PointsAllowed_L" />
+            <SelectField field="W" selected="True" rename="PointsAllowed_W" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+        <Position x="1494" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JoinByRecPos value="False" />
+          <JoinFields>
+            <JoinInfo connection="#1">
+              <Field field="Season" />
+              <Field field="team" />
+            </JoinInfo>
+            <JoinInfo connection="#2">
+              <Field field="Season" />
+              <Field field="team" />
+            </JoinInfo>
+            <JoinInfo connection="#3">
+              <Field field="Season" />
+              <Field field="team" />
+            </JoinInfo>
+            <JoinInfo connection="#4">
+              <Field field="Season" />
+              <Field field="team" />
+            </JoinInfo>
+          </JoinFields>
+          <CartesianMode>Error</CartesianMode>
+          <OutputJoinOnly value="False" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Input_#2_Season" selected="False" rename="Input_#2_Season" />
+                <SelectField field="Input_#2_team" selected="False" rename="Input_#2_team" />
+                <SelectField field="Input_#3_Season" selected="False" rename="Input_#3_Season" />
+                <SelectField field="Input_#3_team" selected="False" rename="Input_#3_team" />
+                <SelectField field="Input_#4_Season" selected="False" rename="Input_#4_Season" />
+                <SelectField field="Input_#4_team" selected="False" rename="Input_#4_team" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1590" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\edwardsd\AppData\Local\Temp\Engine_6876_2cc51761d67544a598e4960288cc84db_\Engine_6704_b2299f3a92f945078fd742fc577193f2_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="870" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="margin" type="Int16" size="2" expression="[for]-[against]" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>margin=[for]-[against]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="870" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="margin" type="Int16" size="2" expression="[for]-[against]" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>margin=[for]-[against]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1254" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Season" />
+            <Field field="team" />
+          </GroupFields>
+          <HeaderField field="src" />
+          <DataField field="Sum_margin" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>margin</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Season" source="CrossTab:Group:Sum:" type="Int16" />
+            <Field name="team" source="CrossTab:Group:Sum:" type="Int16" />
+            <Field name="L" source="CrossTab:Header:src:L:Sum:" type="Int64" />
+            <Field name="W" source="CrossTab:Header:src:W:Sum:" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Season" order="Asc" />
+            <Field field="team" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1350" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="L" selected="True" rename="Margin_L" />
+            <SelectField field="W" selected="True" rename="Margin_W" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Points_Scored_By_Team_Season</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
